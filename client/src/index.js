@@ -24,16 +24,11 @@ const store = configureStore({
   reducer: persistedReducer,
   middleware: (getDefault) =>
   getDefault({
-      serializableCheck: {
-        ignoreActions: [FLUSH,
-          REHYDRATE,
-          PAUSE,
-          PERSIST,
-          PURGE,
-          REGISTER]
-      }
-    })
-})
+    serializableCheck: {
+      ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+    }
+  })
+});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
