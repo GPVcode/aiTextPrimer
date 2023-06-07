@@ -1,7 +1,0 @@
-// When importing diff files into other files, just start from src
-{
-    "compilerOptions": {
-        "baseUrl": "src"
-    },
-    "include": ["src"]
-}

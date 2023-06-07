@@ -1,0 +1,32 @@
+{
+  "name": "aicontentprimerapp",
+  "version": "1.0.0",
+  "description": "MERN AI text primer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GPVcode/aiTextPrimer.git"
+  },
+  "author": "Gabriel Villaruel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GPVcode/aiTextPrimer/issues"
+  },
+  "homepage": "https://github.com/GPVcode/aiTextPrimer#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
