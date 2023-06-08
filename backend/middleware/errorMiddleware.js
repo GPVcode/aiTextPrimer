@@ -1,6 +1,5 @@
 // Default errors for express is an HTML page. We are creating an API. 
 
-//////////////////////////////////////////////////////////////////
 // Url property not found
 const notFound = (req, res, next) => {
   const error = new Error(`Not Found - ${req.originalUrl}`);
