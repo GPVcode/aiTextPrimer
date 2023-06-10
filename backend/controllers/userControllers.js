@@ -87,6 +87,7 @@ const getUserProfile = asyncHandler(async ( req, res ) => {
     res.status(200).json(user);
 });
 
+
 // @ desc Update user profile
 // route POST /api/user/profile
 // @access Private
