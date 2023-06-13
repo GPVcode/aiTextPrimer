@@ -59,33 +59,34 @@ const Summarizer = () => {
     setTimeout(() => setCopied(false), 3000)
   }
   return (
-    <div className='app pt-10'>
-        <h1 className='text-center head_text pb-5'><span class="underline underline-offset-3 decoration-8 gray-black dark:decoration-blue-600">AI Blog Primer</span></h1>
+    <div className='w-full flex justify-center items-center flex-col pt-10'>
+        <h1 className='text-center head_text pb-5'><span className="underline underline-offset-3 decoration-8 gray-black dark:decoration-blue-600">AI Blog Primer</span></h1>
           <h4 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
             Summarize online content with <br className='max-md:hidden' />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">OpenAI GPT-4</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">OpenAI GPT-4</span>
           </h4>
           <p className="text-center">Use this open-source AI content summarizer as a quick reading primer.</p>
-
-          <form onSubmit={handleSubmit}>
-            <div className='my-2' controlId='email'>
-              
-              <div className="d-flex align-items-center">
-              <label>Input</label>
-              
+        
+        {/* SUMMARIZER */}
+        <section className='mt-16 w-full max-w-xl'>
+        <div className='flex flex-col w-full gap-2'>
+          <form className='relative flex justify-center items-center' onSubmit={handleSubmit}>              
+              <img
+                src={linkIcon}
+                alt='link-icon'
+                className='absolute left-0 my-2 ml-3 w-5'
+              />
               <input
                 type='url'
                 placeholder='Paste Article Link'
                 value={article.url}
                 onChange={ (e) => setArticle({ ...article, url: e.target.value }) }
                 required
+                className='url_input peer'
               />
-              <button type='submit' variant='primary' className='mt-3'>
-              ↵
+              <button type='submit' variant='primary' className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700'>
+              <p>↵</p>
               </button>
-              </div>
-
-            </div>
           </form>
 
           {/* BROWSER URL HISTORY */}
@@ -138,6 +139,8 @@ const Summarizer = () => {
               )
             )}
           </div>
+        </div>
+        </section>
     </div>
   );
 };
