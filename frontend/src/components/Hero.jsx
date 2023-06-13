@@ -1,31 +1,27 @@
-import { Container, Card, Button } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className='py-5'>
-      <Container className='d-flex justify-content-center'>
-        <Card className='p-5 d-flex flex-column align-items-center hero-card bg-light w-75'>
-          <h1 className='text-center mb-4'>AI Blog Primer</h1>
-          <h4 className="head_text">
-                Summarize Articles with OpenAI GPT-4
+    <div className='app pt-10'>
+          <h1 className='text-center head_text pb-5 text-gray-900 md:text-4xl lg:text-5xl dark:text-white'><span class="underline text-gray-900 md:text-4xl lg:text-5xl dark:text-white underline-offset-3 decoration-8 gray-black dark:decoration-blue-600">AI Blog Primer</span></h1>
+          <h4 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+            Summarize online content with <br className='max-md:hidden' />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">OpenAI GPT-4</span>
           </h4>
-          <p className="desc">Generate article summaries as a primer for your readings by using this open-source AI article summarizer.</p>
-          <div className='d-flex'>
-            <LinkContainer to='/login'>
-              <Button variant='primary' className='me-3'>
+          <p className="text-center">Use this open-source AI content summarizer as a quick reading primer.</p>
+          <div className='text-center pt-5'>
+            <Link to='/login'>
+              <button type="button" class="text-white  bg-gray-900 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-800 dark:border-gray-800">
                 Sign In
-              </Button>
-            </LinkContainer>
-            <LinkContainer to='/register'>
-              <Button variant='secondary'>
+              </button>
+            </Link>
+            <Link to='/register'>
+              <button type="button" class="text-white bg-gray-900 hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-gray-400 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-800 dark:border-gray-800">
                 Register
-              </Button>
-            </LinkContainer>
+              </button>
+            </Link>
             
           </div>
-        </Card>
-      </Container>
     </div>
   );
 };

@@ -7,9 +7,14 @@ const HomeScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
   return (
-    <div>
-      { !userInfo ? <Hero /> : <Summarizer />}
+    <>
+    <div className='main'>
+      <div className='gradient'/>
     </div>
+      <div className='app'>
+      { !userInfo ? <Hero /> : <Summarizer />}
+      </div>
+    </>
   )
 }
 
