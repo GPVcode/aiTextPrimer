@@ -34,8 +34,8 @@ const Header = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
         <Link to='/' alt='ai_logo' className="flex items-center"> 
-        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-white">Developed by</span>
-        <img src={logo} className=" pl-2 h-8 mr-3" alt="GPVdev Logo" />
+        <span className="self-center text-1xl font-semibold whitespace-nowrap text-white dark:text-white">Developed by</span>
+        <img src={logo} className=" pl-2 h-11" alt="GPVdev Logo" />
         
         </Link>
         <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-300 rounded-lg md:hidden hover:bg-gray-0 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">

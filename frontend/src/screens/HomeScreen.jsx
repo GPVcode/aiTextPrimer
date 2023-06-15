@@ -8,10 +8,6 @@ const HomeScreen = () => {
 
   return (
     <>
-        
-    <div className='main'>
-      <div className='gradient'/>
-    </div>
       <div className='app pt-10'>
       { !userInfo ? <Hero /> : <Summarizer />}
       </div>

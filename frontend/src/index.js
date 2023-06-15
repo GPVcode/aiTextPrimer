@@ -20,7 +20,7 @@ import ForgetPassword from './screens/ForgetPassword';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={ <App /> }>
-      <Route path='/reset-password' element={ForgetPassword} />
+      <Route path='/reset-password' element={<ForgetPassword />} />
       <Route index={ true } path='/' element={ <HomeScreen /> } />
       <Route path='/login' element={ <LoginScreen /> } />
       <Route path='/register' element={ <RegisterScreen /> } />

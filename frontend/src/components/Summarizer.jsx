@@ -50,6 +50,13 @@ const Summarizer = () => {
     }
   };
 
+    // API request to GPT based summarizer
+    const handleDelete = () => {
+    localStorage.removeItem('item');
+
+  };
+  
+
   // autocopy icon functionality
   const handleCopy = (copyUrl) => {
     setCopied(copyUrl);
@@ -57,6 +64,7 @@ const Summarizer = () => {
     navigator.clipboard.writeText(copyUrl);
     // show successful animation
     setTimeout(() => setCopied(false), 3000)
+    
   }
   return (
     <div className='w-full flex justify-center items-center flex-col pt-10'>
@@ -108,6 +116,14 @@ const Summarizer = () => {
                 <p className='flex-1 fot-satoshi text-blue-700 font-medium text-sm truncate'>
                   {item.url}
                 </p>
+
+                <div className="delete_btn" onClick={() => handleDelete()}>
+                  <img 
+                    src={copy} 
+                    className='w-[40%] h-[40%] object-contain'
+                    alt='delete_icon'
+                  />
+                </div>
               </div>
             ))}
           </div>

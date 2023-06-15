@@ -32,5 +32,13 @@
     "nodemailer": "^6.9.3",
     "nodemon": "^2.0.22"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
 }
