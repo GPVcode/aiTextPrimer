@@ -3,7 +3,7 @@ import generateToken from '../utils/generateToken.js'
 import User from '../models/userModel.js';
 
 // @ desc Auth user/set token
-// route POST /api/user/auth
+// route POST /api/users/auth
 // @ access Public ( dont have to be logged in to access route)
 // @ note Use asyncHandler relinguishes need for try and catch
 const authUser = asyncHandler(async ( req, res ) => {
@@ -26,7 +26,7 @@ const authUser = asyncHandler(async ( req, res ) => {
 });
 
 // @ desc Register new user
-// route POST /api/user
+// route POST /api/users
 // @access Public ( dont have to be logged in to access route)
 const registerUser = asyncHandler(async ( req, res ) => {
     // get body
@@ -62,7 +62,7 @@ const registerUser = asyncHandler(async ( req, res ) => {
 });
 
 // @ desc Logout user
-// route POST /api/user/logout
+// route POST /api/users/logout
 // @ access Public ( dont have to be logged in to access route)
 // @ note to log out, delete jwt cookie
 const logoutUser = asyncHandler(async ( req, res ) => {
@@ -75,7 +75,7 @@ const logoutUser = asyncHandler(async ( req, res ) => {
 });
 
 // @ desc Get user profile
-// route POST /api/user/profile
+// route POST /api/users/profile
 // @ access Private
 const getUserProfile = asyncHandler(async ( req, res ) => {
     const user = {
@@ -89,7 +89,7 @@ const getUserProfile = asyncHandler(async ( req, res ) => {
 
 
 // @ desc Update user profile
-// route POST /api/user/profile
+// route POST /api/users/profile
 // @access Private
 const updateUserProfile = asyncHandler(async ( req, res ) => {
     const user = await User.findById(req.user._id);

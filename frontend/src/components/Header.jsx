@@ -68,64 +68,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
-    {/* <header className='bg-white dark:bg-gray-900 fixed w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600'>
-      <nav className='flex justify-between items-center w-full p-3'>
-        <Link to='/' alt='ai_logo' className='w-28 object-contain'>AI Blog Primer</Link>
-
-        <button
-          type='button'
-          onClick={() =>
-            window.open("https://github.com/GPVcode/aiTextPrimer", "_blank")
-          }
-          className='black_btn'
-        >
-          GitHub
-        </button>
-      </nav>
-    </header> */}
-    {/* <header className='w-full flex justify-center items-center flex-col'>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-        <Container>
-          <LinkContainer to='/'>
-            <Navbar.Brand>AI Blog Primer</Navbar.Brand>
-          </LinkContainer>
-          
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
-              { userInfo ? (
-                <>
-                <NavDropdown title={userInfo.name} id='username'>
-                  <LinkContainer to='/profile'>
-                    <NavDropdown.Item>
-                      Profile
-                    </NavDropdown.Item>
-                  </LinkContainer>
-                  <NavDropdown.Item onClick={ logoutHandler }> 
-                    Logout
-                  </NavDropdown.Item>
-                </NavDropdown>
-                </>
-              ) : (
-                <>
-                <LinkContainer to='/login'>
-                  <Nav.Link>
-                    <FaSignInAlt /> Sign In
-                  </Nav.Link>
-                  </LinkContainer>
-                  <LinkContainer to='/register'>
-                  <Nav.Link>
-                    <FaSignOutAlt /> Sign Up
-                  </Nav.Link>
-                </LinkContainer>
-                </>
-              )}
-            
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </header> */}
+  
     </>
   );
 };

@@ -76,8 +76,6 @@ const RegisterScreen = () => {
                     ></input>
                 </div>
 
-                { isLoading && <Loader>Loading..</Loader>}
-
                 <div>
                     <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                     <input
