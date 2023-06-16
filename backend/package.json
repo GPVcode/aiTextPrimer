@@ -4,9 +4,6 @@
   "description": "MERN AI text primer",
   "type": "module",
   "main": "server.js",
-  "engines": {
-    "node": ">=14<15"
-  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
