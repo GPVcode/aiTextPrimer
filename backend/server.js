@@ -4,7 +4,8 @@ dotenv.config();
 import cookieParser from "cookie-parser";
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from "./config/db.js";
-import userRoutes from './routes/userRoutes.js'
+import userRoutes from './routes/userRoutes.js';
+import path from 'path';
 
 connectDB();
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/users', userRoutes);
 // handle deployment
 if(process.env.NODE_ENV === 'production'){
     const __dirname = path.resolve();
+    console.log("dirname", __dirname)
     app.use(express.static(path.join(__dirname, 'frontend/build')));
 
     app.get('*', (req, res) => 
