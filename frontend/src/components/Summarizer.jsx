@@ -1,6 +1,7 @@
 // import { Container, Card } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { copy, loader, tick, linkIcon } from '../assets';
+// import del from '../assets/delete.png'
 // import { Form, Button, InputGroup} from 'react-bootstrap';
 import { useLazyGetSummaryQuery } from '../slices/articleApi';
 
@@ -24,7 +25,6 @@ const Summarizer = () => {
     const articlesFromLocalStorage = JSON.parse(
       localStorage.getItem('articles')
     )
-    console.log("articlesfromSTORAGE", articlesFromLocalStorage)
     if(articlesFromLocalStorage){
       setAllArticles(articlesFromLocalStorage)
     }
@@ -46,21 +46,18 @@ const Summarizer = () => {
       // update local storage
       localStorage.setItem('articles', JSON.stringify(updatedAllArticles))
 
-      console.log("newArticle", newArticle)
     }
   };
 
-    // API request to GPT based summarizer
-    const handleDelete = () => {
-    localStorage.removeItem('item');
-
-  };
+  //   const handleDelete = (item) => {
+  //   console.log(`Deleted ${item}`)
+  // };
   
 
   // autocopy icon functionality
   const handleCopy = (copyUrl) => {
     setCopied(copyUrl);
-    // built in and makes copy button work
+    // built in and makes coy button work
     navigator.clipboard.writeText(copyUrl);
     // show successful animation
     setTimeout(() => setCopied(false), 3000)
@@ -116,14 +113,14 @@ const Summarizer = () => {
                 <p className='flex-1 fot-satoshi text-blue-700 font-medium text-sm truncate'>
                   {item.url}
                 </p>
-
-                <div className="delete_btn" onClick={() => handleDelete()}>
+{/* 
+                <div className="copy_btn" onClick={() => handleDelete(item)}>
                   <img 
-                    src={copy} 
+                    src={del} 
                     className='w-[40%] h-[40%] object-contain'
                     alt='delete_icon'
                   />
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

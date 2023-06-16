@@ -74,7 +74,7 @@ const LoginScreen = () => {
                     ></input>
                 </div>
 
-                { isLoading && <Loader>Loading..</Loader>}
+               
 
                 <button 
                   type="submit" 
@@ -83,7 +83,7 @@ const LoginScreen = () => {
                 >
                   Sign In
                 </button>
-
+                { isLoading && <Loader>Loading..</Loader>}
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                         Don't have an account? <Link className="font-medium text-blue-500 hover:underline dark:text-primary-500" to='/register'>Register</Link>
                 </p>
