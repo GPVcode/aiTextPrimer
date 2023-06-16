@@ -1,7 +1,7 @@
 // import { Container, Card } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { copy, loader, tick, linkIcon } from '../assets';
-// import del from '../assets/delete.png'
+import del from '../assets/delete.png'
 // import { Form, Button, InputGroup} from 'react-bootstrap';
 import { useLazyGetSummaryQuery } from '../slices/articleApi';
 
@@ -49,9 +49,18 @@ const Summarizer = () => {
     }
   };
 
-  //   const handleDelete = (item) => {
-  //   console.log(`Deleted ${item}`)
-  // };
+    const handleDelete = (index) => {
+      const articleArray = [ ...allarticles ]
+      const temp = index;
+      articleArray[index] = articleArray[0];
+      articleArray[0] = articleArray[temp];
+      articleArray.shift();
+
+      setAllArticles(articleArray)
+
+      // update local storage
+      localStorage.setItem('articles', JSON.stringify(articleArray))
+  };
   
 
   // autocopy icon functionality
@@ -113,14 +122,14 @@ const Summarizer = () => {
                 <p className='flex-1 fot-satoshi text-blue-700 font-medium text-sm truncate'>
                   {item.url}
                 </p>
-{/* 
-                <div className="copy_btn" onClick={() => handleDelete(item)}>
+
+                <div className="copy_btn" onClick={() => handleDelete(index)}>
                   <img 
                     src={del} 
                     className='w-[40%] h-[40%] object-contain'
                     alt='delete_icon'
                   />
-                </div> */}
+                </div>
               </div>
             ))}
           </div>
