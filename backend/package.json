@@ -4,13 +4,11 @@
   "description": "MERN AI text primer",
   "type": "module",
   "main": "server.js",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
-    "client": "npm start --prefix frontend",
+    "build": "npm run build",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../frontend/",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
