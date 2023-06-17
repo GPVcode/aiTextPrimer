@@ -6,7 +6,9 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from "./config/db.js";
 import userRoutes from './routes/userRoutes.js';
 // import path from 'path';
+import cors from 'cors';
 
+app.use(cors())
 
 const app = express();
 connectDB();
