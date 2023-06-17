@@ -8,18 +8,20 @@ import userRoutes from './routes/userRoutes.js';
 // import path from 'path';
 import cors from 'cors';
 
-
 const app = express();
-app.use(cors())
+
 connectDB();
 // parse raw json
 app.use(express.json());
+
 // ability to send form data
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
+
+app.use(cors());
 
 // handle deployment
 // if(process.env.NODE_ENV === 'production'){
