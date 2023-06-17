@@ -5,7 +5,7 @@ const Hero = () => {
     <div className='w-full flex justify-center items-center flex-col pt-10'>
         <h1 className='text-center head_text pb-5'><span className="underline underline-offset-3 decoration-8 gray-black dark:decoration-blue-600">AI Blog Primer</span></h1>
           <h4 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
-            Summarize online content with <br className='max-md:hidden' />
+            TEST Summarize online content with <br className='max-md:hidden' />
             <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">OpenAI GPT-4</span>
           </h4>
           <p className="text-center">Use this open-source AI content summarizer as a quick reading primer.</p>
