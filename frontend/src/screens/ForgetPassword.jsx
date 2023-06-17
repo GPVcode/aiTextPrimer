@@ -15,14 +15,6 @@ const ForgetPassword = () => {
       console.log('error')
     }
   
-    // try {
-    //   // const res = await axios.post("/api/auth/forget-password", { email });
-    //   if(res){
-    //     alert("email Sent");
-    //   }
-    // } catch (err) {
-    //   toast.error(err?.data?.message || err.error);
-    // }
   };
 
   return (
