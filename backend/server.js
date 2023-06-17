@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import connectDB from "./config/db.js";
 import userRoutes from './routes/userRoutes.js';
-// import path from 'path';
+import path from 'path';
 import cors from 'cors';
 
 const app = express();
