@@ -7,9 +7,9 @@ import connectDB from "./config/db.js";
 import userRoutes from './routes/userRoutes.js';
 import path from 'path';
 
-connectDB();
-const app = express();
 
+const app = express();
+connectDB();
 // parse raw json
 app.use(express.json());
 // ability to send form data
