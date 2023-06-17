@@ -8,9 +8,9 @@ import userRoutes from './routes/userRoutes.js';
 // import path from 'path';
 import cors from 'cors';
 
-app.use(cors())
 
 const app = express();
+app.use(cors())
 connectDB();
 // parse raw json
 app.use(express.json());
