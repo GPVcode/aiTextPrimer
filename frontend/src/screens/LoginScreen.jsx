@@ -38,8 +38,8 @@ const LoginScreen = () => {
 
   return (
 
-    <section className="bg-gray-50 dark:bg-gray-900">
-      <div className="flex flex-col items-center justify-center mx-auto pt-10">
+  <>
+      <div className="h-screen bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-green-100 via-red-50 to-indigo-100 dark:bg-gray-900 flex flex-row items-start justify-center mx-auto pt-20">
         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -92,7 +92,7 @@ const LoginScreen = () => {
           </div>
         </div>
       </div>
-    </section>
+  </>
   )
 }
 

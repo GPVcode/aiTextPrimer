@@ -1,8 +1,6 @@
-// import { Container, Card } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import { copy, loader, tick, linkIcon } from '../assets';
 import del from '../assets/delete.png'
-// import { Form, Button, InputGroup} from 'react-bootstrap';
 import { useLazyGetSummaryQuery } from '../slices/articleApi';
 
 const Summarizer = () => {
@@ -73,7 +71,7 @@ const Summarizer = () => {
     
   }
   return (
-    <div className='w-full flex justify-center items-center flex-col pt-10'>
+    <div className='w-full flex justify-center items-center flex-col'>
         <h1 className='text-center head_text pb-5'><span className="underline underline-offset-3 decoration-8 gray-black dark:decoration-blue-600">AI Blog Primer</span></h1>
           <h4 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
             Summarize online content with <br className='max-md:hidden' />
@@ -135,9 +133,9 @@ const Summarizer = () => {
           </div>
 
           {/* Display Results */}
-          <div className='my-10 max-w-full flex justify-center items-center'>
+          <div className='mt-10 max-w-full flex justify-center items-center'>
             {isFetching ? (
-              <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
+              <img src={loader} alt='loader' className='w-20 h-10 object-contain' />
                 ) : error ? (
               <p className='font-inter font-bold text-black text-center'>
                 Well, that wasn't supposed to happen...
