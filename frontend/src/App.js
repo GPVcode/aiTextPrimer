@@ -7,12 +7,12 @@ function App() {
   
   return (
     
-    <>
+    <div>
       
       <Header />
       <ToastContainer />
       <Outlet />
-    </>
+    </div>
   );
 }
 

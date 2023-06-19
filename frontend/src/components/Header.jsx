@@ -28,14 +28,14 @@ const Header = () => {
   // max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4
   return (
     
-      <Navbar fluid rounded class="bg-gray-900 border-gray-900 dark:white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4">
-        <div class="w-full flex flex-wrap items-center justify-between bg-gray-900 bg-gradient-to-r p-4 dark:bg-gray-900 sm:p-6 mx-auto">
-        <Navbar.Brand>
-          <Link to='/' alt='ai_logo' class="flex items-center"> 
-          <span class="self-center text-1xl font-semibold whitespace-nowrap text-white dark:text-white">Developed by</span>
-          <img src={logo} class=" pl-2 h-11" alt="GPVdev Logo" />
-          </Link>
-        </Navbar.Brand>
+      <Navbar fluid rounded class="w-full bg-gray-900 border-gray-900 dark:white px-2 py-3 dark:border-gray-700 dark:bg-gray-800 sm:px-4">
+        <div class="w-full flex flex-wrap items-center justify-between bg-gray-900 dark:bg-gray-900 px-20">
+          <Navbar.Brand>
+            <Link to='/' alt='ai_logo' class="flex items-center"> 
+            <span class="self-center text-1xl font-semibold whitespace-nowrap text-white dark:text-white">Developed by</span>
+            <img src={logo} class=" pl-2 h-11" alt="GPVdev Logo" />
+            </Link>
+          </Navbar.Brand>
 
           <Navbar.Toggle />
           <Navbar.Collapse>
@@ -61,7 +61,7 @@ const Header = () => {
                 <Link class="block py-2 pl-3 pr-4 text-white rounded hover:bg-white hover:text-gray-950 md:hover:bg-white md:border-0 md:hover:text-gray-950 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" to='/register'>Register</Link>}
             </Navbar.Link>
           </Navbar.Collapse>
-          </div>
+        </div>
       </Navbar>
 
   );
