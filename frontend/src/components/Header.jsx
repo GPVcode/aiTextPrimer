@@ -40,21 +40,28 @@ const Header = () => {
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Navbar.Link
-              as='button'
+             active
+             class=""
+            >
+            <Link
+              type='button'
               onClick={() =>
                 window.open("https://github.com/GPVcode/aiTextPrimer", "_blank")
               }
               class='block py-2 pl-3 pr-4 text-white rounded hover:bg-white hover:text-gray-950 md:hover:bg-white md:border-0 md:hover:text-gray-950 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-            >
-            GitHub
+              >
+                GitHub
+              </Link>
             </Navbar.Link>
             <Navbar.Link
               active
+              class="]"
             >
               { userInfo ? <Link class="block py-2 pl-3 pr-4 text-white rounded hover:bg-white hover:text-gray-950 md:hover:bg-white md:border-0 md:hover:text-gray-950 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" to='/profile'>Profile</Link> : <Link class='block py-2 pl-3 pr-4 text-white rounded hover:bg-white hover:text-gray-950 md:hover:bg-white md:border-0 md:hover:text-gray-950 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent' to='/login'>Login</Link>}
             </Navbar.Link>
             <Navbar.Link
               active
+              class=""
             >
               { userInfo ? 
                 <Link class="block py-2 pl-3 pr-4 text-white rounded hover:bg-white hover:text-gray-950 md:hover:bg-white md:border-0 md:hover:text-gray-950 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onClick={ logoutHandler }>Logout</Link> :
