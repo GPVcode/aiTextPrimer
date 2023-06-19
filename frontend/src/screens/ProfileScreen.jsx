@@ -51,7 +51,7 @@ const ProfileScreen = () => {
 
             <form className="space-y-4 md:space-y-6" onSubmit={ submitHandler }>
                 <div>
-                    <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
                     <input 
                         type='name'
                         name='name'
@@ -64,7 +64,7 @@ const ProfileScreen = () => {
                 </div>
 
                 <div >
-                <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
                     <input
                         type='email'
                         placeholder='Enter Email'
@@ -77,7 +77,7 @@ const ProfileScreen = () => {
                 </div>
 
                 <div>
-                    <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                     <input
                         type='password'
                         placeholder='••••••••'
@@ -89,7 +89,7 @@ const ProfileScreen = () => {
                     ></input>
                 </div>
 
-                <div for="confirmPassword" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <div htmlFor="confirmPassword" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                     <label>Confirm Password</label>
                     <input
                         type='confirmPassword'

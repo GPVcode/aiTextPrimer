@@ -47,7 +47,7 @@ const LoginScreen = () => {
             </h1>
             <form className="space-y-4 md:space-y-6" onSubmit={ submitHandler }>
                 <div>
-                    <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email Address</label>
                     <input
                       name="email" 
                       id="email" 
@@ -61,7 +61,7 @@ const LoginScreen = () => {
                 </div>
 
                 <div>
-                    <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                    <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
                     <input
                         type="password"
                         name="password"
