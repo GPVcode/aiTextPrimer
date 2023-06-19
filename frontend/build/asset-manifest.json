@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.10d5730c.css",
-    "main.js": "/static/js/main.786e10c7.js",
+    "main.css": "/static/css/main.687ff746.css",
+    "main.js": "/static/js/main.3487a8f8.js",
     "static/media/GPVdev-Black.svg": "/static/media/GPVdev-Black.aa1fb68ae3158e2cdd48142fe2d0ecb6.svg",
     "static/media/logo.svg": "/static/media/logo.5d64ed31f247a44867d9ca8b9f66615e.svg",
     "static/media/loader.svg": "/static/media/loader.fe92c11e2198772cec590f9399d9cdfb.svg",
@@ -9,11 +9,11 @@
     "static/media/copy.svg": "/static/media/copy.44cbc5c7ee485918784765df38060632.svg",
     "static/media/link.svg": "/static/media/link.c2e494879039f5fda6ccd98148a9476c.svg",
     "static/media/tick.svg": "/static/media/tick.20bb18b0d455067c4901cbc841ec66c0.svg",
-    "main.10d5730c.css.map": "/static/css/main.10d5730c.css.map",
-    "main.786e10c7.js.map": "/static/js/main.786e10c7.js.map"
+    "main.687ff746.css.map": "/static/css/main.687ff746.css.map",
+    "main.3487a8f8.js.map": "/static/js/main.3487a8f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d5730c.css",
-    "static/js/main.786e10c7.js"
+    "static/css/main.687ff746.css",
+    "static/js/main.3487a8f8.js"
   ]
 }
