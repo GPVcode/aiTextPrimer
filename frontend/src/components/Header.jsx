@@ -25,11 +25,10 @@ const Header = () => {
       console.log(err)
     }
   }
-  // max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4
   return (
     
       <Navbar fluid rounded class="w-full bg-gray-900 border-gray-900 dark:white px-2 py-3 dark:border-gray-700 dark:bg-gray-800 sm:px-4">
-        <div class="w-full flex flex-wrap items-center justify-between bg-gray-900 dark:bg-gray-900 px-20">
+        <div class="w-full flex flex-wrap items-center justify-between bg-gray-900 dark:bg-gray-900 px-10">
           <Navbar.Brand>
             <Link to='/' alt='ai_logo' class="flex items-center"> 
             <span class="self-center text-1xl font-semibold whitespace-nowrap text-white dark:text-white">Developed by</span>
