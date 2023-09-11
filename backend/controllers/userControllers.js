@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler';
-import generateToken from '../utils/generateToken.js'
+import generateToken from '../utils/generateToken.js';
 import User from '../models/userModel.js';
 
 // @ desc Auth user/set token
@@ -30,7 +30,6 @@ const authUser = asyncHandler(async ( req, res ) => {
 // @access Public ( dont have to be logged in to access route)
 const registerUser = asyncHandler(async ( req, res ) => {
     // get body
-
     const { name, email, password } = req.body;
 
     const userExists = await User.findOne({ email });
