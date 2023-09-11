@@ -22,7 +22,7 @@ To use the Blog Summarizer App, simply visit [App URL] in your web browser.
 4. The app will then generate a concise summary of the blog content for you to read.
 
 ## Demo
-[https://ai-blog-primer.onrender.com/]
+https://ai-blog-primer.onrender.com/
 
 ## Supported Platforms
 - Web
